@@ -171,8 +171,9 @@ body {
 }
 
 .highlight {
-    color: #dc2626;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: #059669;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+    font-weight: 800;
 }
 
 .hero-content h2 {
@@ -207,15 +208,16 @@ body {
 }
 
 .btn-primary {
-    background: #dc2626;
+    background: linear-gradient(135deg, #059669, #047857);
     color: white;
-    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+    box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
+    border: none;
 }
 
 .btn-primary:hover {
-    background: #b91c1c;
+    background: linear-gradient(135deg, #047857, #065f46);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+    box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
 }
 
 .btn-secondary {
@@ -248,7 +250,7 @@ body {
 }
 
 .social-links a:hover {
-    color: #dc2626;
+    color: #059669;
     transform: translateY(-2px);
 }
 
