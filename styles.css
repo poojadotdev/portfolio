@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    background: white;
 }
 
 .container {
@@ -83,8 +84,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
-    color: #1f2937;
+    background: linear-gradient(135deg, #fde047 0%, #facc15 30%, #eab308 70%, #ca8a04 100%) !important;
+    background-color: #fde047 !important;
+    color: #1f2937 !important;
     text-align: center;
     padding: 0 20px;
 }
