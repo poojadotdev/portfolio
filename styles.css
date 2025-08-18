@@ -41,16 +41,19 @@ body {
 }
 
 .nav-logo a {
-    font-size: 1.6rem;
-    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
     color: #f59e0b;
     text-decoration: none;
     letter-spacing: -0.5px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .nav-logo a:hover {
     color: #d97706;
+    transform: scale(1.05);
 }
 
 .nav-menu {
@@ -62,12 +65,33 @@ body {
 .nav-link {
     text-decoration: none;
     color: #333;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    transition: color 0.3s ease;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background: #f59e0b;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
 }
 
 .nav-link:hover {
     color: #f59e0b;
+    transform: translateY(-2px);
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .hamburger {
@@ -821,11 +845,12 @@ section {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(254,243,199,0.95));
+        backdrop-filter: blur(10px);
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.15);
         padding: 2rem 0;
     }
     
