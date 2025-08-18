@@ -84,11 +84,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #fde047 0%, #facc15 30%, #eab308 70%, #ca8a04 100%) !important;
-    background-color: #fde047 !important;
-    color: #1f2937 !important;
+    background: url('images/hero-background.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    color: #1f2937;
     text-align: center;
     padding: 0 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero-content {
@@ -118,6 +137,7 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .highlight {
@@ -127,16 +147,17 @@ body {
 
 .hero-content h2 {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 1.5rem;
-    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .hero-content p {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto 2rem;
-    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    font-weight: 500;
 }
 
 .hero-buttons {
